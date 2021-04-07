@@ -1,0 +1,943 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>EasyLiker - рефералы</title>
+    <link rel="shortcut icon" href="/image/favicon.svg" type="image/png">
+    <link rel="preconnect" href="https://fonts.gstatic.com">
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@300;400;500;600;700;900&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://pro.fontawesome.com/releases/v5.10.0/css/all.css" integrity="sha384-AYmEC3Yw5cVb3ZcuHtOA93w35dYTsvhLPVnYs9eStHfGJvOvKxVfELGroGkvsg+p" crossorigin="anonymous" />
+    <link rel="stylesheet" href="style/style.css">
+</head>
+
+<body>
+    <section class="header">
+        <div class="container">
+            <!-- NAVBAR -->
+            <nav>
+                <ul class="header__navbar">
+                    <a href="/">
+                        <li style="list-style-type: none;">
+                            <img src="image/landing/logotype.png" alt="">
+                        </li>
+                    </a>
+                    <li>
+                        <ul class="header__navbar_links">
+                            <a href="#">
+                                <li>Тарифы</li>
+                            </a>
+                            <a href="#">
+                                <li>Панель управления</li>
+                            </a>
+                            <a href="#">
+                                <li>Мои заказы</li>
+                            </a>
+                            <a href="#">
+                                <li>Документы</li>
+                            </a>
+                            <li><button class="navbar__register navbar__profile"><i class="far fa-user"></i> Профиль</button></li>
+                        </ul>
+                    </li>
+                </ul>
+                <!-- MOBILE NAVBAR -->
+                <ul class="mobile_header_navbar">
+                    <li>
+                        <a href="/"><img src="image/landing/logotype.png" alt=""></a>
+                    </li>
+                    <li class="mobile_header_buttons">
+                        <div>
+                            <button class="mob_menu_button"><img src="image/profile/credit-card.svg" alt="">Пополнить</button>
+                        </div>
+                        <div class="mob_dropdown_menu" id="mob_dropdown_menu">
+                            <div class="mob_drop_menu">
+                                <div></div>
+                                <div></div>
+                                <div></div>
+                            </div>
+                        </div>
+                        <div class="mb_header_dropdown">
+                            <div class="mb_header_romb"></div>
+                            <div class="mb_header_item">
+                                <img src="image/tariff.svg" width="18px" height="18px" alt="">
+                                <p>Тарифы</p>
+                            </div>
+                            <div class="mb_header_item">
+                                <img src="image/equalizer 1.svg" width="18px" height="18px" alt="">
+                                <p>Панель управления</p>
+                            </div>
+                            <div class="mb_header_item">
+                                <img src="image/shopping-bag 3.svg" width="18px" height="18px" alt="">
+                                <p>Мои заказы</p>
+                            </div>
+                            <div class="mb_header_item">
+                                <img src="image/google-docs 1.svg" width="18px" height="18px" alt="">
+                                <p>Документы</p>
+                            </div>
+                            <div class="mb_header_item">
+                                <img src="image/menu_dark 1.svg" width="18px" height="18px" alt="">
+                                <p>Темная тема</p>
+                            </div>
+                            <div class="mb_header_item">
+                                <img src="image/logout (1) 1.svg" width="18px" height="18px" alt="">
+                                <p>Выход</p>
+                            </div>
+                        </div>
+                    </li>
+                </ul>
+            </nav>
+
+            <!-- PROFILE MENU -->
+            <div class="profile__menu">
+                <div class="profile__menu_choise">
+                    <img src="image/fees/menu_balance.svg" alt="">
+                    <p>Баланс</p>
+                </div>
+                <div class="profile__menu_choise" id="dark_theme">
+                    <img src="image/fees/menu_dark.svg" alt="">
+                    <p>Темная тема</p>
+                </div>
+                <div class="profile__menu_choise" id="white_theme">
+                    <img src="image/fees/menu_white.svg" alt="">
+                    <p>Светлая тема</p>
+                </div>
+                <div class="profile__menu_choise">
+                    <img src="image/fees/menu_exit.svg" alt="">
+                    <p>Выйти</p>
+                </div>
+            </div>
+        </div>
+        <!-- PROFILE BODY -->
+        <section class="profile">
+            <div class="container">
+                <div class="profile__body">
+                    <div class="profile__menu_body">
+                        <div class="profile_menu_balance">
+                            <div style="display: flex;">
+                                <img src="image/profile/balance.svg" alt="">
+                                <div class="profile__menu_text">
+                                    <p class="menu_balance_title">Ваш баланс</p>
+                                    <p class="menu_balance">438 ₽ </p>
+                                </div>
+                            </div>
+                            <button>Пополнить</button>
+                        </div>
+                        <div class="tablet_menu">
+                            <a href="orders.html">
+                                <div class="profile_menu_item">
+                                    <div id="orders">
+                                        <img src="image/profile/shopping-bag.svg" alt=""> <span>Мои заказы</span> </button>
+                                    </div>
+                                </div>
+                            </a>
+                            <a href="payment.html">
+                                <div class="profile_menu_item">
+                                    <div id="payment"><img src="image/profile/credit-card.svg" alt=""> <span>Пополнить</span> </div>
+                                </div>
+                            </a>
+                            <a href="refferals.html">
+                                <div class="profile_menu_item">
+                                    <div id="refferals"><img src="image/profile/refferals.svg" alt=""> <span>Рефералы</span> </button>
+                                    </div>
+                                </div>
+                            </a>
+                            <a href="settings.html">
+                                <div class="profile_menu_item">
+                                    <div id="settings"><img src="image/profile/settings.svg" alt=""> <span>Настройки</span> </div>
+                                </div>
+                            </a>
+                            <a href="api.html">
+                                <div class="profile_menu_item_active">
+                                    <div id="api"><img src="image/profile/api_white.svg" alt=""> <span>API</span> </div>
+                                </div>
+                            </a>
+                            <a href="support.html">
+                                <div class="profile_menu_item">
+                                    <div id="support"><img src="image/profile/support.svg" alt=""> <span>Помощь</span> </div>
+                                </div>
+                            </a>
+                        </div>
+                    </div>
+                    <!-- API -->
+                    <div class="api">
+                        <div class="poster">
+                            <div class="poster_text">
+                                <p class="poster_title">API - для создания заданий</p>
+                                <div class="poster_info">
+                                    <img src="image/settings_future.svg" alt="">
+                                    <p>Открытый доступ к созданию заданий для разработчиков в нашей системе. </p>
+                                </div>
+                            </div>
+                            <img class="poster_image api_poster poster_settings" src="image/api_poster.svg" alt="">
+                        </div>
+                        <div class="api_block" id="api_key">
+                            <p class="api_block_title">
+                                Ваш API - ключ
+                            </p>
+                            <div class="api_inputs1">
+                                <input type="text" value="v6a2AcBtlQu2m6oY6R0G">
+                                <button>Сгенерировать ключ</button>
+                            </div>
+                            <div class="api_key" style="display: flex;">
+                                <input type="checkbox" name="checkbox" class="switch">
+                                <p class="api_toogle">Можно взаимодействовать с API по ключу</p>
+                            </div>
+
+                        </div>
+                        <div class="api_block" id="api_work">
+                            <p class="api_block_title">
+                                Взаимодействие с API
+                            </p>
+                            <p class="api_text">
+                                Для вызова методов API необходимо осуществить запрос типа POST на указанный адрес передав необходимые параметры, в заголовке <span>Content-type</span> должно передаваться <span>application/json:</span>
+                            </p>
+                            <div class="api_input_block">
+                                <input type="text" value="https://easyliker.ru/api" readonly>
+                                <p class="input_block_desc">Успешный результат в виде</p>
+                                <input type="text" value="{response: результат работы метода}" readonly>
+                                <p class="input_block_desc">Ошибки</p>
+                                <input type="text" value="{error: тип ошибки}" readonly>
+
+                            </div>
+                        </div>
+                        <div class="api_block" id="api_method">
+                            <p class="api_block_title">
+                                Список методов API
+                            </p>
+                            <div class="api_inputs_block">
+                                <div> <input type="text" value="createTask" readonly>
+                                    <p class="input_block_text">- Создание нового задания</p>
+                                </div>
+                                <div><input type="text" value="getBalance" readonly>
+                                    <p class="input_block_text">- Получение текущего баланса аккаунта</p>
+                                </div>
+                                <div><input type="text" value="getTasks" readonly>
+                                    <p class="input_block_text">- Получение списка заданий</p>
+                                </div>
+                                <div> <input type="text" value="getServices" readonly>
+                                    <p class="input_block_text">- Возвращает словарь со всеми доступными сервисами
+                                    </p>
+                                </div>
+
+                            </div>
+                        </div>
+                        <div class="api_block">
+                            <p class="api_block_title" style="color: red;">
+                                Важно!
+                            </p>
+                            <p class="api_text">Минимальный заказ от 1р, так же стоит учитывать минимальные ограничения по количествам (написаны в min_limit в каждой услуге при вызове метода getServices)</p>
+                            <p class="api_text">Все плановые тех. работы проводятся с 00:00 до 7:00</p>
+                            <p class="api_text">Если вы хотите быть заранее проинформированы о важных изменениях следите за нашим телеграмм каналом <span>@EasyLiker</span></p>
+                        </div>
+                        <div class="api_block" id="createTask">
+                            <p class="api_block_title">
+                                Метод <span>createTask</span> - Создание нового задания
+                            </p>
+                            <p class="api_table_title">Параметры запроса:</p>
+                            <div class="api_block_table">
+                                <div class="api_table_header">
+                                    <p class="api_table_param">Параметры</p>
+                                    <p class="api_table_desc">Описание</p>
+                                </div>
+                                <hr class="api_block_hr">
+                                <div class="api_table_item">
+                                    <p class="api_table_parametr">
+                                        api_token <span class="param_blue">string</span> <span class="param_yellow">, обязательно</span>
+                                    </p>
+                                    <p class="api_table_description">
+                                        Токен авторизации
+                                    </p>
+                                </div>
+                                <hr class="api_block_hr">
+                                <div class="api_table_item">
+                                    <p class="api_table_parametr">
+                                        method <span class="param_blue">string</span> <span class="param_yellow">, обязательно</span>
+                                    </p>
+                                    <p class="api_table_description">
+                                        Метод запроса
+                                    </p>
+                                </div>
+                                <hr class="api_block_hr">
+                                <div class="api_table_item">
+                                    <p class="api_table_parametr">
+                                        version <span class="param_blue">float</span> <span class="param_yellow">, обязательно</span>
+                                    </p>
+                                    <p class="api_table_description">
+                                        Номер версии api. Текущая версия 1.0
+                                    </p>
+                                </div>
+                                <hr class="api_block_hr">
+                                <div class="api_table_item">
+                                    <p class="api_table_parametr">
+                                        website <span class="param_blue">string</span> <span class="param_yellow">, обязательно</span>
+                                    </p>
+                                    <p class="api_table_description">
+                                        Соц. сеть, актуальный список можно получить вызвав метод getServices
+                                    </p>
+                                </div>
+                                <hr class="api_block_hr">
+                                <div class="api_table_item">
+                                    <p class="api_table_parametr">
+                                        type <span class="param_blue">string</span> <span class="param_yellow">, обязательно</span>
+                                    </p>
+                                    <p class="api_table_description">
+                                        Тип накрута, актуальный список можно получить вызвав метод getServices
+                                    </p>
+                                </div>
+                                <hr class="api_block_hr">
+                                <div class="api_table_item">
+                                    <p class="api_table_parametr">
+                                        quality <span class="param_blue">string</span> <span class="param_yellow">, обязательно</span>
+                                    </p>
+                                    <p class="api_table_description">
+                                        Качество, актуальный список можно получить вызвав метод getServices
+                                    </p>
+                                </div>
+                                <hr class="api_block_hr">
+                                <div class="api_table_item">
+                                    <p class="api_table_parametr">
+                                        link <span class="param_blue">float</span> <span class="param_yellow">, обязательно</span>
+                                    </p>
+                                    <p class="api_table_description">
+                                        Ссылка на объект задания
+                                    </p>
+                                </div>
+                                <hr class="api_block_hr">
+                                <div class="api_table_item">
+                                    <p class="api_table_parametr">
+                                        count <span class="param_blue">integer</span> <span class="param_yellow">, обязательно</span>
+                                    </p>
+                                    <p class="api_table_description">
+                                        Количество
+                                    </p>
+                                </div>
+                                <hr class="api_block_hr">
+                                <div class="api_table_item">
+                                    <p class="api_table_parametr">
+                                        comments <span class="param_blue">array of objects</span>
+                                    </p>
+                                    <p class="api_table_description">
+                                        Массив вариантов комментариев, если не передан, то используются стандартные комментарии в зависимости от типа и качества услуги
+                                    </p>
+                                </div>
+                            </div>
+                            <div class="api_block_code">
+                                <p class="api_block_title">Успешный ответ</p>
+                                <p>
+                                    <p>{</p>
+                                    <div style="margin-left: 50px;">
+                                        <p class="api_code_blue">response:</p>
+
+                                        <p>{</p>
+                                        <div class="api_block_code_p">
+                                            <p><span class="api_code_blue">"id":</span> 100,</p>
+
+                                            <p><span class="api_code_blue">"link":</span> "https://vk.com/id1",</p>
+
+                                            <p><span class="api_code_blue">"price":</span> 347.52,</p>
+
+                                            <p><span class="api_code_blue">"balance":</span> 10534.0,</p>
+
+                                            <p><span class="api_code_blue">"status":</span> "Выполнено"</p>
+
+                                        </div>
+
+                                        <p>}</p>
+                                    </div>
+
+                                    <p>}</p>
+                                </p>
+                            </div>
+                            <p class="api_table_title">Ошибки</p>
+                            <div class="api_block_table">
+                                <div class="api_table_header">
+                                    <p class="api_table_param">Тип</p>
+                                    <p class="api_table_desc">Описание</p>
+                                </div>
+                                <hr class="api_block_hr">
+                                <div class="api_table_item">
+                                    <p class="api_table_parametr">
+                                        MISSING_PARAMETER
+                                    </p>
+                                    <p class="api_table_description">
+                                        Переданы не все параметры
+                                    </p>
+                                </div>
+                                <hr class="api_block_hr">
+                                <div class="api_table_item">
+                                    <p class="api_table_parametr">
+                                        INVALID_API_TOKEN
+                                    </p>
+                                    <p class="api_table_description">
+                                        Нерабочий API ключ
+                                    </p>
+                                </div>
+                                <hr class="api_block_hr">
+                                <div class="api_table_item">
+                                    <p class="api_table_parametr">
+                                        INVALID_VERSION
+                                    </p>
+                                    <p class="api_table_description">
+                                        Неверная версии api
+                                    </p>
+                                </div>
+                                <hr class="api_block_hr">
+                                <div class="api_table_item">
+                                    <p class="api_table_parametr">
+                                        INVALID_METHOD
+                                    </p>
+                                    <p class="api_table_description">
+                                        Неверный метод
+                                    </p>
+                                </div>
+                                <hr class="api_block_hr">
+                                <div class="api_table_item">
+                                    <p class="api_table_parametr">
+                                        COUNT_FOR_THIS_ORDER_TOO_LOW
+
+
+                                    </p>
+                                    <p class="api_table_description">
+                                        Количество меньше минимального
+                                    </p>
+                                </div>
+                                <hr class="api_block_hr">
+                                <div class="api_table_item">
+                                    <p class="api_table_parametr">
+                                        INVALID_AMOUNT_OF_ORDER
+                                    </p>
+                                    <p class="api_table_description">
+                                        Минимальная цена заказа 1 руб
+                                    </p>
+                                </div>
+                                <hr class="api_block_hr">
+                                <div class="api_table_item">
+                                    <p class="api_table_parametr">
+                                        BALANCE_TOO_LOW
+                                    </p>
+                                    <p class="api_table_description">
+                                        Недостаточно средств на балансе
+                                    </p>
+                                </div>
+                                <hr class="api_block_hr">
+                                <div class="api_table_item">
+                                    <p class="api_table_parametr">
+                                        URL_INVALID
+                                    </p>
+                                    <p class="api_table_description">
+                                        Неверная ссылка
+                                    </p>
+                                </div>
+                                <hr class="api_block_hr">
+                                <div class="api_table_item">
+                                    <p class="api_table_parametr">
+                                        RULES_ERROR
+                                    </p>
+                                    <p class="api_table_description">
+                                        Контент задания нарушает правила
+                                    </p>
+                                </div>
+                                <hr class="api_block_hr">
+                                <div class="api_table_item">
+                                    <p class="api_table_parametr">
+                                        API_TOKEN_DISABLED
+                                    </p>
+                                    <p class="api_table_description">
+                                        Взаимодействие с API ключом выключено
+                                    </p>
+                                </div>
+
+                                <hr class="api_block_hr">
+                                <div class="api_table_item">
+                                    <p class="api_table_parametr">
+                                        ACCOUNT_BLOCKED
+                                    </p>
+                                    <p class="api_table_description">
+                                        Аккаунт заблокирован
+                                    </p>
+                                </div>
+                                <hr class="api_block_hr">
+                                <div class="api_table_item">
+                                    <p class="api_table_parametr">
+                                        INVALID_COUNT
+                                    </p>
+                                    <p class="api_table_description">
+                                        Количество должно быть целым числом
+                                    </p>
+                                </div>
+                                <hr class="api_block_hr">
+                                <div class="api_table_item">
+                                    <p class="api_table_parametr">
+                                        CREATE_ORDER_ERROR
+                                    </p>
+                                    <p class="api_table_description">
+                                        Ошибка создания заказа
+                                    </p>
+                                </div>
+                            </div>
+                            <p class="api_text">
+                                Цены и ограничения по количествам на каждую услугу изменяются не зависимо от версии api, если вы хотите быть заранее проинформированы о важных изменениях следите за нашим телеграмм каналом <span>@EasyLiker</span>
+                            </p>
+                        </div>
+                        <div class="api_block" id="getBalance">
+                            <p class="api_block_title">
+                                Метод <span>getBalance</span> - Получение текущего баланса аккаунта
+                            </p>
+                            <p class="api_table_title">Параметры запроса:</p>
+                            <div class="api_block_table">
+                                <div class="api_table_header">
+                                    <p class="api_table_param">Параметры</p>
+                                    <p class="api_table_desc">Описание</p>
+                                </div>
+                                <hr class="api_block_hr">
+                                <div class="api_table_item">
+                                    <p class="api_table_parametr">
+                                        api_token <span class="param_blue">string</span> <span class="param_yellow">, обязательно</span>
+                                    </p>
+                                    <p class="api_table_description">
+                                        Токен авторизации
+                                    </p>
+                                </div>
+                                <hr class="api_block_hr">
+                                <div class="api_table_item">
+                                    <p class="api_table_parametr">
+                                        method <span class="param_blue">string</span> <span class="param_yellow">, обязательно</span>
+                                    </p>
+                                    <p class="api_table_description">
+                                        Метод запроса
+                                    </p>
+                                </div>
+                                <hr class="api_block_hr">
+                                <div class="api_table_item">
+                                    <p class="api_table_parametr">
+                                        version <span class="param_blue">float</span> <span class="param_yellow">, обязательно</span>
+                                    </p>
+                                    <p class="api_table_description">
+                                        Номер версии api. Текущая версия 1.0
+                                    </p>
+                                </div>
+                            </div>
+                            <div class="api_block_code">
+                                <p class="api_block_title">Успешный ответ</p>
+                                <p>
+                                    <p>{</p>
+                                    <div style="margin-left: 50px;">
+                                        <p class="api_code_blue">response: <span style="color: #536270;">10353.06</span></p>
+
+                                    </div>
+
+                                    <p>}</p>
+                                </p>
+                            </div>
+                            <p class="api_table_title">Ошибки</p>
+                            <div class="api_block_table">
+                                <div class="api_table_header">
+                                    <p class="api_table_param">Тип</p>
+                                    <p class="api_table_desc">Описание</p>
+                                </div>
+                                <hr class="api_block_hr">
+                                <div class="api_table_item">
+                                    <p class="api_table_parametr">
+                                        MISSING_PARAMETER
+                                    </p>
+                                    <p class="api_table_description">
+                                        Переданы не все параметры
+                                    </p>
+                                </div>
+                                <hr class="api_block_hr">
+                                <div class="api_table_item">
+                                    <p class="api_table_parametr">
+                                        INVALID_API_TOKEN
+                                    </p>
+                                    <p class="api_table_description">
+                                        Нерабочий API ключ
+                                    </p>
+                                </div>
+                                <hr class="api_block_hr">
+                                <div class="api_table_item">
+                                    <p class="api_table_parametr">
+                                        INVALID_VERSION
+                                    </p>
+                                    <p class="api_table_description">
+                                        Неверная версии api
+                                    </p>
+                                </div>
+                                <hr class="api_block_hr">
+                                <div class="api_table_item">
+                                    <p class="api_table_parametr">
+                                        INVALID_METHOD
+                                    </p>
+                                    <p class="api_table_description">
+                                        Неверный метод
+                                    </p>
+                                </div>
+                                <hr class="api_block_hr">
+                                <div class="api_table_item">
+                                    <p class="api_table_parametr">
+                                        API_TOKEN_DISABLED
+                                    </p>
+                                    <p class="api_table_description">
+                                        Взаимодействие с API ключом выключено
+                                    </p>
+                                </div>
+
+                                <hr class="api_block_hr">
+                                <div class="api_table_item">
+                                    <p class="api_table_parametr">
+                                        ACCOUNT_BLOCKED
+                                    </p>
+                                    <p class="api_table_description">
+                                        Аккаунт заблокирован
+                                    </p>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="api_block" id="getTasks">
+                            <p class="api_block_title">
+                                Метод <span>getTasks</span> - Получение списка заданий
+                            </p>
+                            <p class="api_table_title">Параметры запроса:</p>
+                            <div class="api_block_table">
+                                <div class="api_table_header">
+                                    <p class="api_table_param">Параметры</p>
+                                    <p class="api_table_desc">Описание</p>
+                                </div>
+                                <hr class="api_block_hr">
+                                <div class="api_table_item">
+                                    <p class="api_table_parametr">
+                                        api_token <span class="param_blue">string</span> <span class="param_yellow">, обязательно</span>
+                                    </p>
+                                    <p class="api_table_description">
+                                        Токен авторизации
+                                    </p>
+                                </div>
+                                <hr class="api_block_hr">
+                                <div class="api_table_item">
+                                    <p class="api_table_parametr">
+                                        method <span class="param_blue">string</span> <span class="param_yellow">, обязательно</span>
+                                    </p>
+                                    <p class="api_table_description">
+                                        Метод запроса
+                                    </p>
+                                </div>
+                                <hr class="api_block_hr">
+                                <div class="api_table_item">
+                                    <p class="api_table_parametr">
+                                        version <span class="param_blue">float</span> <span class="param_yellow">, обязательно</span>
+                                    </p>
+                                    <p class="api_table_description">
+                                        Номер версии api. Текущая версия 1.0
+                                    </p>
+                                </div>
+                                <hr class="api_block_hr">
+                                <div class="api_table_item">
+                                    <p class="api_table_parametr">
+                                        id integer
+                                    </p>
+                                    <p class="api_table_description">
+                                        Номер заказа. В ответе будет один заказ в массиве. Если не передан, то вернется count последних заказов
+                                    </p>
+                                </div>
+                                <hr class="api_block_hr">
+                                <div class="api_table_item">
+                                    <p class="api_table_parametr">
+                                        count integer
+                                    </p>
+                                    <p class="api_table_description">
+                                        Количество заказов, которые вернет сервер сортируя от новых к старым. По умолчанию 20
+                                    </p>
+                                </div>
+                                <hr class="api_block_hr">
+                                <div class="api_table_item">
+                                    <p class="api_table_parametr">
+                                        offset integer
+                                    </p>
+                                    <p class="api_table_description">
+                                        Смещение по вашим заказам. По умолчанию 0
+                                    </p>
+                                </div>
+                            </div>
+                            <div class="api_block_code">
+                                <p class="api_block_title">Успешный ответ</p>
+                                <p>
+                                    <p>{</p>
+                                    <div style="margin-left: 50px;">
+                                        <p class="api_code_blue">response:</p>
+
+                                        <p>[{</p>
+                                        <div class="api_block_code_p">
+                                            <p><span class="api_code_blue">"id":</span> 100,</p>
+
+                                            <p><span class="api_code_blue">"date":</span> "02.01.2021 | 04:20:34",</p>
+
+                                            <p><span class="api_code_blue">"link":</span> "https://vk.com/id1",</p>
+
+                                            <p><span class="api_code_blue">"count":</span> 1450,</p>
+
+                                            <p><span class="api_code_blue">"sum":</span> 217.5,</p>
+
+                                            <p><span class="api_code_blue">"name":</span> "VK друзья | офферы, низкое качество"</p>
+
+                                            <p><span class="api_code_blue">"status":</span> "Выполнено"</p>
+
+                                        </div>
+
+                                        <p>}]</p>
+                                    </div>
+
+                                    <p>}</p>
+                                </p>
+                            </div>
+                            <p class="api_table_title">Ошибки</p>
+                            <div class="api_block_table">
+                                <div class="api_table_header">
+                                    <p class="api_table_param">Тип</p>
+                                    <p class="api_table_desc">Описание</p>
+                                </div>
+                                <hr class="api_block_hr">
+                                <div class="api_table_item">
+                                    <p class="api_table_parametr">
+                                        MISSING_PARAMETER
+                                    </p>
+                                    <p class="api_table_description">
+                                        Переданы не все параметры
+                                    </p>
+                                </div>
+                                <hr class="api_block_hr">
+                                <div class="api_table_item">
+                                    <p class="api_table_parametr">
+                                        INVALID_API_TOKEN
+                                    </p>
+                                    <p class="api_table_description">
+                                        Нерабочий API ключ
+                                    </p>
+                                </div>
+                                <hr class="api_block_hr">
+                                <div class="api_table_item">
+                                    <p class="api_table_parametr">
+                                        INVALID_VERSION
+                                    </p>
+                                    <p class="api_table_description">
+                                        Неверная версии api
+                                    </p>
+                                </div>
+                                <hr class="api_block_hr">
+                                <div class="api_table_item">
+                                    <p class="api_table_parametr">
+                                        INVALID_METHOD
+                                    </p>
+                                    <p class="api_table_description">
+                                        Неверный метод
+                                    </p>
+                                </div>
+                                <hr class="api_block_hr">
+                                <div class="api_table_item">
+                                    <p class="api_table_parametr">
+                                        API_TOKEN_DISABLED
+                                    </p>
+                                    <p class="api_table_description">
+                                        Взаимодействие с API ключом выключено
+                                    </p>
+                                </div>
+
+                                <hr class="api_block_hr">
+                                <div class="api_table_item">
+                                    <p class="api_table_parametr">
+                                        ACCOUNT_BLOCKED
+                                    </p>
+                                    <p class="api_table_description">
+                                        Аккаунт заблокирован
+                                    </p>
+                                </div>
+                                <hr class="api_block_hr">
+                                <div class="api_table_item">
+                                    <p class="api_table_parametr">
+                                        TASKS_ABSENT
+                                    </p>
+                                    <p class="api_table_description">
+                                        Задание отсутствует
+                                    </p>
+                                </div>
+                                <hr class="api_block_hr">
+                                <div class="api_table_item">
+                                    <p class="api_table_parametr">
+                                        ERROR_WHILE_GETTING_TASKS
+                                    </p>
+                                    <p class="api_table_description">
+                                        Ошибка получения заказов
+                                    </p>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="api_block" id="getServices">
+                            <p class="api_block_title">
+                                Метод <span>getServices</span> - Возвращает словарь со всеми сервисами
+                            </p>
+                            <p class="api_table_title">Параметры запроса:</p>
+                            <div class="api_block_table">
+                                <div class="api_table_header">
+                                    <p class="api_table_param">Параметры</p>
+                                    <p class="api_table_desc">Описание</p>
+                                </div>
+                                <hr class="api_block_hr">
+                                <div class="api_table_item">
+                                    <p class="api_table_parametr">
+                                        api_token <span class="param_blue">string</span> <span class="param_yellow">, обязательно</span>
+                                    </p>
+                                    <p class="api_table_description">
+                                        Токен авторизации
+                                    </p>
+                                </div>
+                                <hr class="api_block_hr">
+                                <div class="api_table_item">
+                                    <p class="api_table_parametr">
+                                        method <span class="param_blue">string</span> <span class="param_yellow">, обязательно</span>
+                                    </p>
+                                    <p class="api_table_description">
+                                        Метод запроса
+                                    </p>
+                                </div>
+                                <hr class="api_block_hr">
+                                <div class="api_table_item">
+                                    <p class="api_table_parametr">
+                                        version <span class="param_blue">float</span> <span class="param_yellow">, обязательно</span>
+                                    </p>
+                                    <p class="api_table_description">
+                                        Номер версии api. Текущая версия 1.0
+                                    </p>
+                                </div>
+                            </div>
+                            <p class="api_table_title">Ошибки</p>
+                            <div class="api_block_table">
+                                <div class="api_table_header">
+                                    <p class="api_table_param">Тип</p>
+                                    <p class="api_table_desc">Описание</p>
+                                </div>
+                                <hr class="api_block_hr">
+                                <div class="api_table_item">
+                                    <p class="api_table_parametr">
+                                        MISSING_PARAMETER
+                                    </p>
+                                    <p class="api_table_description">
+                                        Переданы не все параметры
+                                    </p>
+                                </div>
+                                <hr class="api_block_hr">
+                                <div class="api_table_item">
+                                    <p class="api_table_parametr">
+                                        INVALID_API_TOKEN
+                                    </p>
+                                    <p class="api_table_description">
+                                        Нерабочий API ключ
+                                    </p>
+                                </div>
+                                <hr class="api_block_hr">
+                                <div class="api_table_item">
+                                    <p class="api_table_parametr">
+                                        INVALID_VERSION
+                                    </p>
+                                    <p class="api_table_description">
+                                        Неверная версии api
+                                    </p>
+                                </div>
+                                <hr class="api_block_hr">
+                                <div class="api_table_item">
+                                    <p class="api_table_parametr">
+                                        INVALID_METHOD
+                                    </p>
+                                    <p class="api_table_description">
+                                        Неверный метод
+                                    </p>
+                                </div>
+                                <hr class="api_block_hr">
+                                <div class="api_table_item">
+                                    <p class="api_table_parametr">
+                                        API_TOKEN_DISABLED
+                                    </p>
+                                    <p class="api_table_description">
+                                        Взаимодействие с API ключом выключено
+                                    </p>
+                                </div>
+
+                                <hr class="api_block_hr">
+                                <div class="api_table_item">
+                                    <p class="api_table_parametr">
+                                        ACCOUNT_BLOCKED
+                                    </p>
+                                    <p class="api_table_description">
+                                        Аккаунт заблокирован
+                                    </p>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+        </section>
+        <!-- FOOTER -->
+        <section class="footer">
+            <div class="container">
+                <div class="footer__body">
+                    <div>
+                        <img src="image/landing/logotype.png" alt="">
+                    </div>
+                    <div class="footer__body_links">
+                        <ul>
+                            <li>API</li>
+                            <li>Контакты</li>
+                            <li>Новости и обновления</li>
+                            <li>Документы</li>
+                            <button class="footer_profile"><i class="far fa-user"></i> Профиль</button></li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+        </section>
+</body>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+<script src="js/main.js"></script>
+<script>
+    /* API - навигация */
+    $(window).on('resize scroll', function() {
+        if ($('#api_main_menu').isInViewport()) {
+            $('.api_navigation').removeClass('api_nav_active').addClass('api_nav_inactive');
+        } else {
+            $('.api_navigation').css('display', 'block').removeClass('api_nav_inactive').addClass('api_nav_active');
+        }
+    });
+    /* API: toggle */
+
+    document.body.setAttribute('data-theme', 'light');
+    const switchbtn = document.querySelector('.switch');
+
+    switchbtn.addEventListener('change', function() {
+        if (this.checked) {
+            transition();
+            document.body.setAttribute('data-theme', 'dark');
+            $('.api_toogle').html('<span>Нельзя</span> взаимодействовать с API по ключу');
+        } else {
+            transition();
+            document.body.setAttribute('data-theme', 'light');
+            $('.api_toogle').html('<span>Можно</span> взаимодействовать с API по ключу');
+        }
+    });
+
+    let transition = () => {
+        document.body.classList.add('transition');
+        window.setTimeout(() => {
+            document.body.classList.remove('transition');
+        }, 1000);
+    }
+    $.fn.isInViewport = function() {
+        var elementTop = $(this).offset().top;
+        var elementBottom = elementTop + $(this).outerHeight();
+
+        var viewportTop = $(window).scrollTop();
+        var viewportBottom = viewportTop + $(window).height();
+
+        return elementBottom > viewportTop && elementTop < viewportBottom;
+    };
+</script>
+
+</html>

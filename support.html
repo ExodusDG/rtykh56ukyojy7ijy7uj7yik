@@ -1,0 +1,269 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>EasyLiker - поддержка</title>
+    <link rel="shortcut icon" href="/image/favicon.svg" type="image/png">
+    <link rel="preconnect" href="https://fonts.gstatic.com">
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@300;400;500;600;700;900&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://pro.fontawesome.com/releases/v5.10.0/css/all.css" integrity="sha384-AYmEC3Yw5cVb3ZcuHtOA93w35dYTsvhLPVnYs9eStHfGJvOvKxVfELGroGkvsg+p" crossorigin="anonymous" />
+    <link rel="stylesheet" href="style/style.css">
+</head>
+
+<body>
+    <section class="header">
+        <div class="container">
+            <!-- NAVBAR -->
+            <nav>
+                <ul class="header__navbar">
+                    <a href="/">
+                        <li style="list-style-type: none;">
+                            <img src="image/landing/logotype.png" alt="">
+                        </li>
+                    </a>
+                    <li>
+                        <ul class="header__navbar_links">
+                            <a href="#">
+                                <li>Тарифы</li>
+                            </a>
+                            <a href="#">
+                                <li>Панель управления</li>
+                            </a>
+                            <a href="#">
+                                <li>Мои заказы</li>
+                            </a>
+                            <a href="#">
+                                <li>Документы</li>
+                            </a>
+                            <li><button class="navbar__register navbar__profile"><i class="far fa-user"></i> Профиль</button></li>
+                        </ul>
+                    </li>
+                </ul>
+                <!-- MOBILE NAVBAR -->
+                <ul class="mobile_header_navbar">
+                    <li>
+                        <a href="/"><img src="image/landing/logotype.png" alt=""></a>
+                    </li>
+                    <li class="mobile_header_buttons">
+                        <div>
+                            <button class="mob_menu_button"><img src="image/profile/credit-card.svg" alt="">Пополнить</button>
+                        </div>
+                        <div class="mob_dropdown_menu" id="mob_dropdown_menu">
+                            <div class="mob_drop_menu">
+                                <div></div>
+                                <div></div>
+                                <div></div>
+                            </div>
+                        </div>
+                        <div class="mb_header_dropdown">
+                            <div class="mb_header_romb"></div>
+                            <div class="mb_header_item">
+                                <img src="image/tariff.svg" width="18px" height="18px" alt="">
+                                <p>Тарифы</p>
+                            </div>
+                            <div class="mb_header_item">
+                                <img src="image/equalizer 1.svg" width="18px" height="18px" alt="">
+                                <p>Панель управления</p>
+                            </div>
+                            <div class="mb_header_item">
+                                <img src="image/shopping-bag 3.svg" width="18px" height="18px" alt="">
+                                <p>Мои заказы</p>
+                            </div>
+                            <div class="mb_header_item">
+                                <img src="image/google-docs 1.svg" width="18px" height="18px" alt="">
+                                <p>Документы</p>
+                            </div>
+                            <div class="mb_header_item">
+                                <img src="image/menu_dark 1.svg" width="18px" height="18px" alt="">
+                                <p>Темная тема</p>
+                            </div>
+                            <div class="mb_header_item">
+                                <img src="image/logout (1) 1.svg" width="18px" height="18px" alt="">
+                                <p>Выход</p>
+                            </div>
+                        </div>
+                    </li>
+                </ul>
+            </nav>
+
+            <!-- PROFILE MENU -->
+            <div class="profile__menu">
+                <div class="profile__menu_choise">
+                    <img src="image/fees/menu_balance.svg" alt="">
+                    <p>Баланс</p>
+                </div>
+                <div class="profile__menu_choise" id="dark_theme">
+                    <img src="image/fees/menu_dark.svg" alt="">
+                    <p>Темная тема</p>
+                </div>
+                <div class="profile__menu_choise" id="white_theme">
+                    <img src="image/fees/menu_white.svg" alt="">
+                    <p>Светлая тема</p>
+                </div>
+                <div class="profile__menu_choise">
+                    <img src="image/fees/menu_exit.svg" alt="">
+                    <p>Выйти</p>
+                </div>
+            </div>
+        </div>
+        <!-- PROFILE BODY -->
+        <section class="profile">
+            <div class="container">
+                <div class="profile__body">
+                    <div class="profile__menu_body">
+                        <div class="profile_menu_balance">
+                            <div style="display: flex;">
+                                <img src="image/profile/balance.svg" alt="">
+                                <div class="profile__menu_text">
+                                    <p class="menu_balance_title">Ваш баланс</p>
+                                    <p class="menu_balance">438 ₽ </p>
+                                </div>
+                            </div>
+                            <button>Пополнить</button>
+                        </div>
+                        <div class="tablet_menu">
+                            <a href="orders.html">
+                                <div class="profile_menu_item">
+                                    <div id="orders">
+                                        <img src="image/profile/shopping-bag.svg" alt=""> <span>Мои заказы</span> </button>
+                                    </div>
+                                </div>
+                            </a>
+                            <a href="payment.html">
+                                <div class="profile_menu_item">
+                                    <div id="payment"><img src="image/profile/credit-card.svg" alt=""> <span>Пополнить</span> </div>
+                                </div>
+                            </a>
+                            <a href="refferals.html">
+                                <div class="profile_menu_item">
+                                    <div id="refferals"><img src="image/profile/refferals.svg" alt=""> <span>Рефералы</span> </button>
+                                    </div>
+                                </div>
+                            </a>
+                            <a href="settings.html">
+                                <div class="profile_menu_item">
+                                    <div id="settings"><img src="image/profile/settings.svg" alt=""> <span>Настройки</span> </div>
+                                </div>
+                            </a>
+                            <a href="api.html">
+                                <div class="profile_menu_item">
+                                    <div id="api"><img src="image/profile/api.svg" alt=""> <span>API</span> </div>
+                                </div>
+                            </a>
+                            <a href="support.html">
+                                <div class="profile_menu_item_active">
+                                    <div id="support"><img src="image/profile/support_white.svg" alt=""> <span>Помощь</span> </div>
+                                </div>
+                            </a>
+                        </div>
+                    </div>
+                    <!-- Помощь -->
+                    <div class="support">
+                        <div class="poster">
+                            <div class="poster_text">
+                                <p class="poster_title">Помощь</p>
+                                <div class="poster_info">
+                                    <img src="image/profile/coolicon.svg" alt="">
+                                    <p>Если у вас возникли вопросы по работе нашего сервиса, Вы можете обратиться в службу поддержки. Вопросы заданные в Telegram получают самый быстрый ответ. </p>
+                                </div>
+
+                            </div>
+                            <img class="poster_image poster_settings" src="image/settings_poster.svg" alt="">
+                        </div>
+                        <div class="support_contact">
+                            <p class="support_cont_title">Контакты тех. поддержки</p>
+                            <div class="support_contact_cards">
+                                <div class="support_contact_card">
+                                    <img src="image/support_1.svg" alt="">
+                                    <p>Telegram</p>
+                                </div>
+                                <div class="support_contact_card">
+                                    <img src="image/support_2.svg" alt="">
+                                    <p>Вконтакте</p>
+                                </div>
+                                <div class="support_contact_card">
+                                    <img src="image/support_3.svg" alt="">
+                                    <p>Эл. почта</p>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="support_faq">
+                            <p class="faq_title">FAQ - Вопросы и ответы</p>
+                            <div class="support_faq_items">
+                                <div class="support_faq_item support_faq_item_inactive">
+                                    <div class="support_faq_visible">
+                                        <img src="image/plus.svg" alt="">
+                                        <p class="support_faq_question">В чем разница между офферами и живыми?</p>
+                                    </div>
+                                    <div class="support_faq_answer">
+                                        <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut</p>
+                                    </div>
+                                </div>
+                                <div class="support_faq_item ">
+                                    <div class="support_faq_visible">
+                                        <img src="image/plus.svg" alt="">
+                                        <p class="support_faq_question">Как долго выполняется задания?</p>
+                                    </div>
+                                    <div class="support_faq_answer">
+                                        <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut</p>
+                                    </div>
+                                </div>
+                                <div class="support_faq_item">
+                                    <div class="support_faq_visible">
+                                        <img src="image/plus.svg" alt="">
+                                        <p class="support_faq_question">В чем разница между офферами и живыми?</p>
+                                    </div>
+                                    <div class="support_faq_answer">
+                                        <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut</p>
+                                    </div>
+                                </div>
+                                <div class="support_faq_item">
+                                    <div class="support_faq_visible">
+                                        <img src="image/plus.svg" alt="">
+                                        <p class="support_faq_question">В чем разница между офферами и живыми?</p>
+                                    </div>
+                                    <div class="support_faq_answer">
+                                        <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut. Lorem ipsum
+                                            dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut</p>
+                                    </div>
+                                </div>
+                                <div class="support_faq_item">
+                                    <div class="support_faq_visible">
+                                        <img src="image/plus.svg" alt="">
+                                        <p class="support_faq_question">В чем разница между офферами и живыми?</p>
+                                    </div>
+                                    <div class="support_faq_answer">
+                                        <p>Тест</p>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+        </section>
+        <!-- FOOTER -->
+        <section class="footer">
+            <div class="container">
+                <div class="footer__body">
+                    <div>
+                        <img src="image/landing/logotype.png" alt="">
+                    </div>
+                    <div class="footer__body_links">
+                        <ul>
+                            <li>API</li>
+                            <li>Контакты</li>
+                            <li>Новости и обновления</li>
+                            <li>Документы</li>
+                            <button class="footer_profile"><i class="far fa-user"></i> Профиль</button></li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+        </section>
+</body>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+<script src="js/main.js"></script>
+
+</html>

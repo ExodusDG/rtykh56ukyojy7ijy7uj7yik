@@ -1,0 +1,367 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>EasyLiker - пополнение</title>
+    <link rel="shortcut icon" href="/image/favicon.svg" type="image/png">
+    <link rel="preconnect" href="https://fonts.gstatic.com">
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@300;400;500;600;700;900&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://pro.fontawesome.com/releases/v5.10.0/css/all.css" integrity="sha384-AYmEC3Yw5cVb3ZcuHtOA93w35dYTsvhLPVnYs9eStHfGJvOvKxVfELGroGkvsg+p" crossorigin="anonymous" />
+    <link rel="stylesheet" href="style/style.css">
+</head>
+
+<body>
+    <section class="header">
+        <div class="container">
+            <!-- NAVBAR -->
+            <nav>
+                <ul class="header__navbar">
+                    <a href="/">
+                        <li style="list-style-type: none;">
+                            <img src="image/landing/logotype.png" alt="">
+                        </li>
+                    </a>
+                    <li>
+                        <ul class="header__navbar_links">
+                            <a href="#">
+                                <li>Тарифы</li>
+                            </a>
+                            <a href="#">
+                                <li>Панель управления</li>
+                            </a>
+                            <a href="#">
+                                <li>Мои заказы</li>
+                            </a>
+                            <a href="#">
+                                <li>Документы</li>
+                            </a>
+                            <li><button class="navbar__register navbar__profile"><i class="far fa-user"></i> Профиль</button></li>
+                        </ul>
+                    </li>
+                </ul>
+            </nav>
+            <!-- MOBILE NAVBAR -->
+            <ul class="mobile_header_navbar">
+                <li>
+                    <a href="/"><img src="image/landing/logotype.png" alt=""></a>
+                </li>
+                <li class="mobile_header_buttons">
+                    <div>
+                        <button class="mob_menu_button"><img src="image/profile/credit-card.svg" alt="">Пополнить</button>
+                    </div>
+                    <div class="mob_dropdown_menu" id="mob_dropdown_menu">
+                        <div class="mob_drop_menu">
+                            <div></div>
+                            <div></div>
+                            <div></div>
+                        </div>
+                    </div>
+                    <div class="mb_header_dropdown">
+                        <div class="mb_header_romb"></div>
+                        <div class="mb_header_item">
+                            <img src="image/tariff.svg" width="18px" height="18px" alt="">
+                            <p>Тарифы</p>
+                        </div>
+                        <div class="mb_header_item">
+                            <img src="image/equalizer 1.svg" width="18px" height="18px" alt="">
+                            <p>Панель управления</p>
+                        </div>
+                        <div class="mb_header_item">
+                            <img src="image/shopping-bag 3.svg" width="18px" height="18px" alt="">
+                            <p>Мои заказы</p>
+                        </div>
+                        <div class="mb_header_item">
+                            <img src="image/google-docs 1.svg" width="18px" height="18px" alt="">
+                            <p>Документы</p>
+                        </div>
+                        <div class="mb_header_item">
+                            <img src="image/menu_dark 1.svg" width="18px" height="18px" alt="">
+                            <p>Темная тема</p>
+                        </div>
+                        <div class="mb_header_item">
+                            <img src="image/logout (1) 1.svg" width="18px" height="18px" alt="">
+                            <p>Выход</p>
+                        </div>
+                    </div>
+                </li>
+            </ul>
+            <!-- PROFILE MENU -->
+            <div class="profile__menu">
+                <div class="profile__menu_choise">
+                    <img src="image/fees/menu_balance.svg" alt="">
+                    <p>Баланс</p>
+                </div>
+                <div class="profile__menu_choise" id="dark_theme">
+                    <img src="image/fees/menu_dark.svg" alt="">
+                    <p>Темная тема</p>
+                </div>
+                <div class="profile__menu_choise" id="white_theme">
+                    <img src="image/fees/menu_white.svg" alt="">
+                    <p>Светлая тема</p>
+                </div>
+                <div class="profile__menu_choise">
+                    <img src="image/fees/menu_exit.svg" alt="">
+                    <p>Выйти</p>
+                </div>
+            </div>
+        </div>
+        <!-- PROFILE BODY -->
+        <section class="profile">
+            <div class="container">
+                <div class="profile__body">
+                    <div class="profile__menu_body">
+                        <div class="profile_menu_balance">
+                            <div style="display: flex;">
+                                <img src="image/profile/balance.svg" alt="">
+                                <div class="profile__menu_text">
+                                    <p class="menu_balance_title">Ваш баланс</p>
+                                    <p class="menu_balance">438 ₽ </p>
+                                </div>
+                            </div>
+                            <button>Пополнить</button>
+                        </div>
+                        <div class="tablet_menu">
+                            <a href="orders.html">
+                                <div class="profile_menu_item">
+                                    <div id="orders">
+                                        <img src="image/profile/shopping-bag.svg" alt=""> <span>Мои заказы</span> </button>
+                                    </div>
+                                </div>
+                            </a>
+                            <a href="payment.html">
+                                <div class="profile_menu_item_active">
+                                    <div id="payment"><img src="image/profile/credit-card_white.svg" alt=""> <span>Пополнить</span> </div>
+                                </div>
+                            </a>
+                            <a href="refferals.html">
+                                <div class="profile_menu_item">
+                                    <div id="refferals"><img src="image/profile/refferals.svg" alt=""> <span>Рефералы</span> </button>
+                                    </div>
+                                </div>
+                            </a>
+                            <a href="settings.html">
+                                <div class="profile_menu_item">
+                                    <div id="settings"><img src="image/profile/settings.svg" alt=""> <span>Настройки</span> </div>
+                                </div>
+                            </a>
+                            <a href="api.html">
+                                <div class="profile_menu_item">
+                                    <div id="api"><img src="image/profile/api.svg" alt=""> <span>API</span> </div>
+                                </div>
+                            </a>
+                            <a href="api.html">
+                                <div class="profile_menu_item">
+                                    <div id="support"><img src="image/profile/support.svg" alt=""> <span>Помощь</span> </div>
+                                </div>
+                            </a>
+                        </div>
+                    </div>
+                    <!-- Пополнить -->
+                    <div class="menu-item payment">
+                        <div class="poster">
+                            <div class="poster_text">
+                                <p class="poster_title">Пополнение</p>
+                                <div class="poster_info">
+                                    <img src="image/profile/credit_card.svg" alt="">
+                                    <p>Пополняйте баланс моментально любым удобным способом и без комиссии! </p>
+                                </div>
+                                <div class="poster_info">
+                                    <img src="image/profile/tag-outline.svg" alt="">
+                                    <p>Активация купонов позволяет получить дополнительные средства на ваш счёт. </p>
+                                </div>
+                            </div>
+                            <img class="poster_image" src="image/profile/payment_poster.svg" alt="">
+                        </div>
+                        <div class="add_balance">
+                            <div class="add_balance_block">
+                                <p>Введите сумму</p>
+                                <div style="display: flex;">
+                                    <input type="text">
+                                    <img class="balance_button" src="image/profile/balance-button.svg" alt="">
+                                </div>
+
+                            </div>
+                            <img class="payment_img" src="image/profile/payment-img.svg" alt="">
+                        </div>
+                        <div class="payment_method">
+                            <div class="payment_method_item">
+                                <img src="image/profile/payment/qiwi.svg" alt="">
+                                <p class="payment_name">QIWI</p>
+                                <div class="payment_method_choise" style="display: none;">
+                                    <img src="image/profile/payment/done1.svg" alt="">
+                                </div>
+                            </div>
+                            <div class="payment_method_item">
+                                <img src="image/profile/payment/youmoney.png" alt="">
+                                <p class="payment_name">money</p>
+                                <div class="payment_method_choise" style="display: none;">
+                                    <img src="image/profile/payment/done1.svg" alt="">
+                                </div>
+                            </div>
+                            <div class="payment_method_item">
+                                <img src="image/profile/payment/anypay.svg" alt="">
+                                <p class="payment_name">Anypay</p>
+                                <div class="payment_method_choise" style="display: none;">
+                                    <img src="image/profile/payment/done1.svg" alt="">
+                                </div>
+                            </div>
+                            <div class="payment_method_item">
+                                <img src="image/profile/payment/card.svg" alt="">
+                                <p class="payment_name">Карта</p>
+                                <div class="payment_method_choise" style="display: none;">
+                                    <img src="image/profile/payment/done1.svg" alt="">
+                                </div>
+                            </div>
+                            <div class="payment_method_item">
+                                <img src="image/profile/payment/mts.svg" alt="">
+                                <p class="payment_name">MTS</p>
+                                <div class="payment_method_choise" style="display: none;">
+                                    <img src="image/profile/payment/done1.svg" alt="">
+                                </div>
+                            </div>
+                            <div class="payment_method_item">
+                                <img src="image/profile/payment/beeline.svg" alt="">
+                                <p class="payment_name">Beeline</p>
+                                <div class="payment_method_choise" style="display: none;">
+                                    <img src="image/profile/payment/done1.svg" alt="">
+                                </div>
+                            </div>
+                            <div class="payment_method_item">
+                                <img src="image/profile/payment/tele2.svg" alt="" style="width: 30%;">
+                                <p class="payment_name">Tele2</p>
+                                <div class="payment_method_choise" style="display: none;">
+                                    <img src="image/profile/payment/done1.svg" alt="">
+                                </div>
+                            </div>
+                            <div class="payment_method_item">
+                                <img src="image/profile/payment/megafon.svg" alt="">
+                                <p class="payment_name">Megafon</p>
+                                <div class="payment_method_choise" style="display: none;">
+                                    <img src="image/profile/payment/done1.svg" alt="">
+                                </div>
+                            </div>
+                            <div class="payment_method_item">
+                                <img src="image/profile/payment/apple.svg" alt="">
+                                <p class="payment_name">ApplePay</p>
+                                <div class="payment_method_choise" style="display: none;">
+                                    <img src="image/profile/payment/done1.svg" alt="">
+                                </div>
+                            </div>
+                            <div class="payment_method_item">
+                                <img src="image/profile/payment/samsung.svg" alt="">
+                                <p class="payment_name" style="font-size: 20px">SamsungPay</p>
+                                <div class="payment_method_choise" style="display: none;">
+                                    <img src="image/profile/payment/done1.svg" alt="">
+                                </div>
+                            </div>
+                            <div class="payment_method_item">
+                                <img src="image/profile/payment/webmoney.svg" alt="">
+                                <p class="payment_name">Webmoney</p>
+                                <div class="payment_method_choise" style="display: none;">
+                                    <img src="image/profile/payment/done1.svg" alt="">
+                                </div>
+                            </div>
+                            <div class="payment_method_item">
+                                <img src="image/profile/payment/payeer.svg" alt="">
+                                <p class="payment_name">Payeer</p>
+                                <div class="payment_method_choise" style="display: none;">
+                                    <img src="image/profile/payment/done1.svg" alt="">
+                                </div>
+                            </div>
+                            <div class="payment_method_item">
+                                <img src="image/profile/payment/advcash.svg" alt="">
+                                <p class="payment_name">AdvCash</p>
+                                <div class="payment_method_choise" style="display: none;">
+                                    <img src="image/profile/payment/done1.svg" alt="">
+                                </div>
+                            </div>
+                            <div class="payment_method_item">
+                                <img src="image/profile/payment/perfect.svg" alt="">
+                                <p class="payment_name" style="font-size: 20px">PerfectMoney</p>
+                                <div class="payment_method_choise" style="display: none;">
+                                    <img src="image/profile/payment/done1.svg" alt="">
+                                </div>
+                            </div>
+                            <div class="payment_method_item_fake">
+
+                                <p class="payment_name"></p>
+                            </div>
+                            <div class="payment_method_item_fake">
+
+                                <p class="payment_name"></p>
+                            </div>
+                        </div>
+                        <div class="payment_button">
+                            <button class="payment_pay">Пополнить баланс</button>
+                        </div>
+                        <div class="add_balance">
+                            <div class="add_balance_block">
+                                <p>Введите промокод</p>
+                                <div style="display: flex;">
+                                    <input type="text">
+                                    <img class="balance_button" src="image/profile/payment/done.svg" alt="">
+                                </div>
+
+                            </div>
+                            <img src="image/profile/payment_promo.svg" alt="">
+                        </div>
+                        <div class="payment_history">
+                            <div class="payment_history_header">
+                                <p class="payment_history_summa">Сумма</p>
+                                <p class="payment_history_data">Дата</p>
+                                <p class="payment_history_way">Способ</p>
+                            </div>
+                            <hr class="payment_hr">
+                            <div class="payment_history_lists">
+                                <div class="payment_history_list">
+                                    <p class="payment_history_price_t">320 руб</p>
+                                    <p class="payment_history_data_t">13.03.2021</p>
+                                    <p class="payment_history_way_t">QIWI</p>
+                                </div>
+                            </div>
+                            <hr class="payment_hr">
+                            <div class="payment_history_lists">
+                                <div class="payment_history_list">
+                                    <p class="payment_history_price_t">1080 руб</p>
+                                    <p class="payment_history_data_t">10.03.2021</p>
+                                    <p class="payment_history_way_t">Card</p>
+                                </div>
+                            </div>
+                            <hr class="payment_hr">
+                            <div class="payment_history_lists">
+                                <div class="payment_history_list">
+                                    <p class="payment_history_price_t">3060 руб</p>
+                                    <p class="payment_history_data_t">22.03.2021</p>
+                                    <p class="payment_history_way_t">AnyPay</p>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+        </section>
+        <!-- FOOTER -->
+        <section class="footer">
+            <div class="container">
+                <div class="footer__body">
+                    <div>
+                        <img src="image/landing/logotype.png" alt="">
+                    </div>
+                    <div class="footer__body_links">
+                        <ul>
+                            <li>API</li>
+                            <li>Контакты</li>
+                            <li>Новости и обновления</li>
+                            <li>Документы</li>
+                            <button class="footer_profile"><i class="far fa-user"></i> Профиль</button></li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+        </section>
+</body>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+<script src="js/main.js"></script>
+
+</html>
